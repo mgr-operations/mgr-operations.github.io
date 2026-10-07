@@ -4,21 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MGR | ClickUp & Operations Consulting</title>
+  <title>MGR | ClickUp & Operations Solutions</title>
   <meta name="description" content="MGR — Management · Growth · Results. We turn manual and fragmented processes into structured, automated workflows using ClickUp, automation, and AI.">
   <meta name="theme-color" content="#0a0a0a">
-  <meta name="author" content="MGR Consulting">
+  <meta name="author" content="MGR Solutions">
 
   <!-- Social sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="MGR | ClickUp & Operations Consulting">
+  <meta property="og:title" content="MGR | ClickUp & Operations Solutions">
   <meta property="og:description" content="Management · Growth · Results. Turn messy operations into working systems with ClickUp, automation and AI.">
-  <meta property="og:image" content="logo.png">
+  <meta property="og:image" content="Logo.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="logo.png">
+  <meta name="twitter:image" content="Logo.png">
 
   <!-- Favicon (gold M on black) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0a'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23c9a24b'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png?v=2">
+  <link rel="shortcut icon" href="favicon.png?v=2">
+  <link rel="apple-touch-icon" href="favicon.png?v=2">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -252,7 +254,7 @@
       mask-image: radial-gradient(ellipse at center, #000 55%, transparent 100%);
     }
 
-    /* Fallback shown only if logo.png is missing */
+    /* Fallback shown only if Logo.png is missing */
     .logo-fallback { display: none; text-align: center; }
 
     .logo-visual.no-img img { display: none; }
@@ -331,6 +333,97 @@
     }
 
     .section-description { color: var(--muted); font-size: 18px; }
+
+    /* ---------- CREDENTIALS ---------- */
+
+.credentials {
+  padding: 64px 0;
+  background: var(--charcoal);
+  border-top: 1px solid rgba(201,162,75,0.3);
+  border-bottom: 1px solid rgba(201,162,75,0.3);
+  color: #fff;
+}
+
+.credentials-head {
+  max-width: 760px;
+  margin-bottom: 36px;
+}
+
+.credentials-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 18px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  background: rgba(201,162,75,0.08);
+  margin-bottom: 18px;
+}
+
+.credentials-head h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.credentials-head p {
+  color: var(--muted-light);
+  font-size: 17px;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.credential {
+  padding: 28px 26px;
+  border: 1px solid var(--line-dark);
+  border-radius: 12px;
+  background: var(--graphite);
+  transition: 0.25s ease;
+}
+
+.credential:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.credential-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold-light);
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.credential h3 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.credential p {
+  font-size: 14px;
+  color: var(--muted-light);
+}
+
+@media (max-width: 900px) {
+  .credentials-grid { grid-template-columns: 1fr; }
+}
 
     /* ---------- PROBLEMS ---------- */
 
@@ -633,7 +726,7 @@
   <nav>
     <div class="container nav-inner">
 
-      <a href="#" class="logo" aria-label="MGR Consulting home">
+      <a href="#" class="logo" aria-label="MGR Solutions home">
         <span class="logo-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M5 19L19 5"/><path d="M9 5h10v10"/>
@@ -641,7 +734,7 @@
         </span>
         <span class="logo-stack">
           <span class="logo-text">MGR</span>
-          <span class="logo-sub">Consulting</span>
+          <span class="logo-sub">Solutions</span>
         </span>
       </a>
 
@@ -663,7 +756,7 @@
 
         <div class="hero-content">
 
-          <div class="eyebrow">ClickUp & Operations Consulting</div>
+          <div class="eyebrow">ClickUp & Operations Solutions</div>
 
           <h1>
             Turn messy operations into
@@ -671,7 +764,7 @@
           </h1>
 
           <p class="hero-text">
-            I help growing teams turn manual, fragmented processes into
+            We help growing teams turn manual, fragmented processes into
             structured and automated workflows using ClickUp, automation,
             and AI.
           </p>
@@ -685,7 +778,7 @@
 
         </div>
 
-        <!-- Place your logo file next to index.html and name it logo.png -->
+        <!-- Place your logo file next to index.html and name it Logo.png -->
         <div class="logo-visual">
           <img src="logo.png" alt="MGR — Management, Growth, Results" onerror="this.parentNode.classList.add('no-img')">
           <div class="logo-fallback">
@@ -698,6 +791,46 @@
     </div>
   </header>
 
+
+<!-- CREDENTIALS -->
+<section class="credentials" aria-label="ClickUp credentials">
+  <div class="container">
+
+    <div class="credentials-head">
+      <div class="credentials-badge">✓ ClickUp VSP Certified Seller</div>
+
+      <h2>Official ClickUp expertise, behind every project.</h2>
+
+      <p>
+        MGR is a ClickUp VSP Certified Seller (Verified Service Provider)
+        and our team includes both ClickUp Experts and ClickUp Admins.
+      </p>
+    </div>
+
+    <div class="credentials-grid">
+
+      <div class="credential">
+        <div class="credential-icon">✓</div>
+        <h3>VSP Certified Seller</h3>
+        <p>Verified Service Provider recognized by ClickUp to sell and deliver implementation services.</p>
+      </div>
+
+      <div class="credential">
+        <div class="credential-icon">★</div>
+        <h3>ClickUp Expert</h3>
+        <p>Deep, hands-on knowledge of workspace design, automation and AI features.</p>
+      </div>
+
+      <div class="credential">
+        <div class="credential-icon">⚙</div>
+        <h3>ClickUp Admin</h3>
+        <p>Experience managing permissions, structure and governance across larger workspaces.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
   <!-- PROBLEMS -->
   <section class="problems">
