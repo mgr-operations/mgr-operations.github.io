@@ -25,8 +25,12 @@ footer with page links, and a `#contact` CTA section.
 - **Prices:** the "From $…" figures on `plans.html` (and the teaser on the home
   page) are starting points — adjust them there when your quote structure changes.
 - **Support form:** configuration lives at the bottom of `support.html`
-  (`API_ENDPOINT`, `SUPPORT_EMAIL`). Until one is set, the form shows the
-  book-a-call / LinkedIn fallback instead of a fake success.
+  (`API_ENDPOINT`, `SUPPORT_EMAIL`). `SUPPORT_EMAIL` is set to
+  `support.mgr.solutions@gmail.com`, so submissions open the visitor's mail
+  app pre-filled. If neither is set, the form shows the book-a-call /
+  LinkedIn fallback instead of a fake success.
+- **Email contact:** every "Let's talk" section has a `Contact Us` button
+  linking to the same address (with a page-specific subject line).
 
 ## Backend (planned, not deployed)
 
