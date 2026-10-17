@@ -39,11 +39,19 @@ The full plan — architecture options, endpoint specs, database schema, form
 wiring and the deployment checklist — is in
 [`docs/BACKEND-PLAN.md`](docs/BACKEND-PLAN.md).
 
-## SEO (planned, not deployed)
+## SEO
 
-The site currently has no canonical tags, structured data, `robots.txt` or
-`sitemap.xml`. The audit, keyword targets, phases and ready-to-paste snippets
-are in [`docs/SEO-PLAN.md`](docs/SEO-PLAN.md) — start with Phase 0 there.
+Phase 0 is live: every page has a self-referential canonical and full social
+metadata, the home page carries the `Organization` structured data (inner pages
+carry `BreadcrumbList`, `services.html` describes its 8 services), and
+`robots.txt` + `sitemap.xml` are published at the root. The hero logo is served
+as `logo-hero.webp` (15.8 KB, down from a 1.5 MB PNG).
+
+Remaining work — Search Console/Bing verification, content pages, off-site
+profiles — is tracked in [`docs/SEO-PLAN.md`](docs/SEO-PLAN.md).
+
+When adding a page, add its canonical, its `sitemap.xml` entry, and a
+`BreadcrumbList` block so the patterns stay consistent.
 
 ## Local preview
 

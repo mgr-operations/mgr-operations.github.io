@@ -1,9 +1,8 @@
 # MGR Website — SEO Plan
 
-Status: **planned, not implemented.** This document is the audit and the ordered
-work plan for making `mgr-operations.github.io` discoverable in Google, Bing and
-the AI answer surfaces. Nothing in here has been applied to the site yet — every
-item is a task with a "done when" check.
+Status: **Phase 0 and the hero-image performance fix applied 2026-10-17.** The
+audit below records the state before that work and has been updated where it
+changed; the remaining phases are still tasks with a "done when" check.
 
 Companion document: [`BACKEND-PLAN.md`](BACKEND-PLAN.md) (forms, API, database).
 
@@ -19,14 +18,14 @@ Audited by reading the four live pages, not by assumption.
 | Titles | Unique and descriptive on all 4 (`Services \| MGR ClickUp & Operations Solutions`, …) | Good |
 | Meta descriptions | Unique on all 4 | Good |
 | H1 | Exactly one per page | Good |
-| Canonical tags | **None on any page** | Fix in Phase 0 |
-| Structured data | **No JSON-LD anywhere** | Fix in Phase 0 |
-| Open Graph | `og:type`, `og:title`, `og:description`, `og:image` + `twitter:card`, `twitter:image` on all 4 | Add `og:url`, `og:site_name`, `twitter:title`, `twitter:description` |
-| `robots.txt` | Missing | Phase 0 (works here — see §4.4) |
-| `sitemap.xml` | Missing | Phase 0 |
+| Canonical tags | Self-referential canonical on all 4 pages (was: none) | ✅ Done 2026-10-17 |
+| Structured data | `Organization` on the home page, `BreadcrumbList` on the inner three, 8 `Service` entries on `services.html` | ✅ Done 2026-10-17 |
+| Open Graph | `og:type`, `og:site_name`, `og:locale`, `og:title`, `og:description`, `og:url`, `og:image` (+ `width`/`height`/`alt`), `twitter:card`, `twitter:title`, `twitter:description`, `twitter:image` | ✅ Done 2026-10-17 |
+| `robots.txt` | Published at the root, allows all crawlers and points at the sitemap | ✅ Done 2026-10-17 |
+| `sitemap.xml` | Published at the root with the 4 page URLs | ✅ Done 2026-10-17 |
 | Search Console / Bing Webmaster | Not verified (no verification meta or file) | Phase 0 — nothing is measurable until this exists |
 | Analytics | **None** (no GA4/Plausible/Umami snippet anywhere) | Decide in §9 |
-| Hero image | `Logo.png` = **1,542.8 KB**, 1536×1024, rendered above the fold, **no `width`/`height`** | Biggest single performance defect — Phase 1 |
+| Hero image | `Logo.png` was 1,542.8 KB at 1536×1024 with no `width`/`height`. The hero now loads `logo-hero.webp` (1120×747, **15.8 KB**) with dimensions and `fetchpriority="high"` | ✅ Done 2026-10-17 — verify field LCP in Search Console |
 | Page weight | index.html 16.9 KB · styles.css 26.3 KB · fonts via Google Fonts CSS (already `display=swap` + preconnect) | Acceptable once the logo is fixed |
 | JavaScript | Only `support.html` (the form). Other pages ship none | Good — INP risk is near zero |
 | URL shape | `.html` extensions (`/services.html`); GitHub Pages cannot rewrite or redirect them | Decision in §4.6 |
@@ -327,6 +326,11 @@ Call tracking is out of scope (no published phone number).
 | 13 | B2B directory profile + review requests | 3 | ongoing | Medium | ≥1 live profile with genuine reviews |
 | 14 | Analytics decision + install | 3 | ~1 h | Medium | Conversions visible per page |
 | 15 | Industry/service pages (only if scope genuinely differs) | 3 | ~3 h each | Medium | Each earns impressions within ~4 weeks |
+
+**Applied 2026-10-17:** rows 1, 2, 3, 6 and 7. Still open: row 4 (Search Console
+and Bing Webmaster need the owner's accounts — nothing can be verified until
+that is done) and row 5 (the pricing PDF and its print template are still
+uncommitted, so the `noindex` step has not been needed yet).
 
 ---
 

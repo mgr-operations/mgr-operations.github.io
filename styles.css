@@ -1184,6 +1184,9 @@ footer {
 .footer-links a { letter-spacing: 1px; text-transform: uppercase; font-size: 12px; }
 .footer-links a:hover { color: var(--gold-light); }
 
+.footer-email { color: var(--gold-light); word-break: break-word; }
+.footer-email:hover { color: var(--gold); text-decoration: underline; }
+
 /* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 1000px) {

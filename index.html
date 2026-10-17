@@ -9,13 +9,24 @@
   <meta name="theme-color" content="#0a0a0a">
   <meta name="author" content="MGR Solutions">
 
+  <link rel="canonical" href="https://mgr-operations.github.io/">
+
   <!-- Social sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="MGR | ClickUp & Operations Solutions">
+  <meta property="og:site_name" content="MGR Solutions">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="MGR | ClickUp &amp; Operations Solutions">
   <meta property="og:description" content="Management · Growth · Results. Turn messy operations into working systems with ClickUp, automation and AI.">
-  <meta property="og:image" content="https://mgr-operations.github.io/Logo.png">
+  <meta property="og:url" content="https://mgr-operations.github.io/">
+  <meta property="og:image" content="https://mgr-operations.github.io/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MGR Solutions — Management · Growth · Results">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://mgr-operations.github.io/Logo.png">
+  <meta name="twitter:title" content="MGR | ClickUp &amp; Operations Solutions">
+  <meta name="twitter:description" content="Management · Growth · Results. Turn messy operations into working systems with ClickUp, automation and AI.">
+  <meta name="twitter:image" content="https://mgr-operations.github.io/og-image.jpg">
+  <meta name="twitter:image:alt" content="MGR Solutions — Management · Growth · Results">
 
   <!-- Favicon (gold M on black) -->
   <link rel="icon" type="image/png" sizes="512x512" href="favicon.png?v=2">
@@ -29,6 +40,40 @@
 
   <!-- Shared styles (used by every page) -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured data: organisation identity (one definition site-wide) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://mgr-operations.github.io/#organization",
+    "name": "MGR Solutions",
+    "alternateName": "MGR — Management · Growth · Results",
+    "url": "https://mgr-operations.github.io/",
+    "logo": "https://mgr-operations.github.io/Logo.png",
+    "email": "support.mgr.solutions@gmail.com",
+    "description": "ClickUp and operations consultancy: process design, workspace implementation, automation and ongoing optimization.",
+    "knowsAbout": [
+      "ClickUp implementation",
+      "Process design and SOPs",
+      "Workflow automation",
+      "AI agents for operations",
+      "Sales operations",
+      "Dashboards and reporting"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "support.mgr.solutions@gmail.com",
+        "availableLanguage": "en"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/mgr-ops/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -94,9 +139,18 @@
 
         </div>
 
-        <!-- Place your logo file next to index.html and name it Logo.png -->
+        <!-- Hero logo: logo-hero.webp (1120x747, ~16 KB). The full-size
+             Logo.png stays in the repository for the schema.org logo and as
+             the source for regenerating this file. The text fallback below
+             shows if the image cannot load. -->
         <div class="logo-visual">
-          <img src="Logo.png" alt="MGR — Management, Growth, Results" onerror="this.parentNode.classList.add('no-img')">
+          <img
+            src="logo-hero.webp"
+            alt="MGR — Management, Growth, Results"
+            width="1120"
+            height="747"
+            fetchpriority="high"
+            onerror="this.parentNode.classList.add('no-img')">
           <div class="logo-fallback">
             <div class="big">MGR</div>
             <div class="tag">Management · Growth · Results</div>
@@ -484,6 +538,7 @@
         <div class="footer-brand">MGR</div>
         <div>© 2026 MGR Solutions</div>
         <div>ClickUp · Operations · Automation · AI</div>
+        <div><a class="footer-email" href="mailto:support.mgr.solutions@gmail.com">support.mgr.solutions@gmail.com</a></div>
       </div>
 
       <nav class="footer-links" aria-label="Footer">
