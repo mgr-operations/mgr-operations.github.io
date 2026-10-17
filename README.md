@@ -35,6 +35,12 @@ The full plan — architecture options, endpoint specs, database schema, form
 wiring and the deployment checklist — is in
 [`docs/BACKEND-PLAN.md`](docs/BACKEND-PLAN.md).
 
+## SEO (planned, not deployed)
+
+The site currently has no canonical tags, structured data, `robots.txt` or
+`sitemap.xml`. The audit, keyword targets, phases and ready-to-paste snippets
+are in [`docs/SEO-PLAN.md`](docs/SEO-PLAN.md) — start with Phase 0 there.
+
 ## Local preview
 
 ```bash
