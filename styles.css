@@ -70,7 +70,7 @@ nav {
   align-items: center;
 }
 
-.logo-monogram { display: block; width: 112px; height: auto; }
+.logo-monogram { display: block; width: 92px; height: 45px; object-fit: contain; }
 
 .logo-sub {
   font-size: 10px;
