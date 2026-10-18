@@ -81,7 +81,7 @@ nav {
   justify-content: center;
 }
 
-.logo-mark svg { width: 20px; height: 20px; fill: var(--gold); }
+.logo-arrow { width: 20px; height: 20px; object-fit: contain; }
 
 .logo-text {
   font-family: var(--serif);
